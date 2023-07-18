@@ -1,14 +1,14 @@
 // Import all of Bootstrap's CSS
-@use './variables.scss';
+@use "./variables.scss";
 @import "~bootstrap/scss/bootstrap";
 
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-body{
-    -ms-overflow-style:none ;
-    scrollbar-width: none;
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .carousel-img {
@@ -85,24 +85,29 @@ ul {
   }
 }
 
-.icon{
-    font-size: 50px;
-    color: var(--color-crimson);
-    padding: 25px;
-    background-color: #ccc;
-
+.icon {
+  font-size: 50px;
+  padding: 25px;
 }
 
-.nav-bar{
-    background-color: #fff;
+.icon-management {
+  background-color: #ccc;
+  color: var(--color-crimson);
+}
+.icon-footer {
+  color: #fff;
 }
 
-.title{
-    padding: 25px 0;
+.nav-bar {
+  background-color: #fff;
 }
 
-.nav-part:hover{
-    color: #fff;
+.title {
+  padding: 25px 0;
+}
+
+.nav-part:hover {
+  color: #fff;
 }
 
 .grow {
@@ -121,7 +126,7 @@ ul {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-    box-shadow: 10px -15px 7px  #c7c7c7;
+    box-shadow: 10px -15px 7px #c7c7c7;
     //box-shadow: 0 0 5px 5px  #c7c7c7;
   }
 }
@@ -134,7 +139,7 @@ ul {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-    box-shadow: 10px 15px 7px  #c7c7c7;
+    box-shadow: 10px 15px 7px #c7c7c7;
     //box-shadow: 0 0 5px 5px  #c7c7c7;
   }
 }
@@ -147,7 +152,7 @@ ul {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-    box-shadow: -10px -15px 7px  #c7c7c7;
+    box-shadow: -10px -15px 7px #c7c7c7;
     //box-shadow: 0 0 5px 5px  #c7c7c7;
   }
 }
@@ -159,16 +164,24 @@ ul {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-    box-shadow: -10px 15px 7px  #c7c7c7;
+    box-shadow: -10px 15px 7px #c7c7c7;
     //box-shadow: 0 0 5px 5px  #c7c7c7;
   }
 }
 
-.nav-carousel{
-    margin-top: 85px;
+.nav-carousel {
+  margin-top: 85px;
 }
 
-footer{
-    background-color: var(--color-mine-shaft);
+footer {
+  background-color: var(--color-mine-shaft);
 }
 
+hr {
+  height: 1px;
+  color: #fff;
+}
+
+html {
+  height: 100%;
+}
