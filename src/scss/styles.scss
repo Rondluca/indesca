@@ -185,3 +185,33 @@ hr {
 html {
   height: 100%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.marquee-content {
+  display: flex;
+  animation: scrolling 20s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 16vw;
+  margin: 0 1vw;
+}
+
+.marquee-item img {
+  display: block;
+  width: 100%;
+
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-144vw); }
+}
