@@ -2,6 +2,10 @@
 @use "./variables.scss";
 @import "~bootstrap/scss/bootstrap";
 
+html{
+  scroll-behavior: smooth;
+}
+
 html,body{
   overflow-x: hidden;
 }
@@ -13,6 +17,11 @@ body {
 
 .carousel-img {
   object-fit: cover;
+}
+
+.img-organization{
+  object-fit: cover;
+  height: 350px;
 }
 
 .justify-text {
@@ -171,7 +180,7 @@ ul {
   }
 }
 
-.nav-carousel {
+main {
   margin-top: 85px;
 }
 
