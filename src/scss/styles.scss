@@ -2,13 +2,13 @@
 @use "./variables.scss";
 @import "~bootstrap/scss/bootstrap";
 
-body::-webkit-scrollbar {
-  display: none;
+html,body{
+  overflow-x: hidden;
 }
 
 body {
-  -ms-overflow-style: none;
   scrollbar-width: none;
+  position: relative;
 }
 
 .carousel-img {
@@ -94,13 +94,15 @@ ul {
   background-color: #ccc;
   color: var(--color-crimson);
 }
+
+.icon-ig{
+  color: var(--color-crimson);
+}
+
 .icon-footer {
   color: #fff;
 }
 
-.nav-bar {
-  background-color: #fff;
-}
 
 .title {
   padding: 25px 0;
