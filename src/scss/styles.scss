@@ -2,11 +2,12 @@
 @use "./variables.scss";
 @import "~bootstrap/scss/bootstrap";
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -23,7 +24,7 @@ a {
   object-fit: cover;
 }
 
-.img-organization{
+.img-organization {
   object-fit: cover;
   height: 350px;
 }
@@ -108,14 +109,13 @@ ul {
   color: var(--color-crimson);
 }
 
-.icon-ig{
+.icon-ig {
   color: var(--color-crimson);
 }
 
 .icon-footer {
   color: #fff;
 }
-
 
 .title {
   padding: 25px 0;
@@ -209,7 +209,6 @@ body {
   margin: 0;
 }
 
-
 .marquee-content {
   display: flex;
   animation: scrolling 20s linear infinite;
@@ -223,37 +222,38 @@ body {
 .marquee-item img {
   display: block;
   width: 100%;
-
 }
 
 @keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translatex(-144vw); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-144vw);
+  }
 }
 
-.OP{
+.OP {
   height: 300px;
   width: 100%;
   background-image: url(../images/imagenes/fachada-01.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
-  // text-shadow: #ccc 1px 0 10px;
   text-shadow: 1px 1px 20px black;
-
 }
 
-.si{
+.si {
   list-style: initial;
 }
-.tambien{
+.tambien {
   display: flex;
   flex-direction: column;
   height: 150px;
   justify-content: space-evenly;
 }
 
-.op-services{
+.op-services {
   height: 500px;
   width: 100%;
 }
