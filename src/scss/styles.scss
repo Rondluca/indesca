@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 .carousel-img {
   object-fit: cover;
 }
@@ -225,4 +229,31 @@ body {
 @keyframes scrolling {
   0% { transform: translateX(0); }
   100% { transform: translatex(-144vw); }
+}
+
+.OP{
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/imagenes/fachada-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  // text-shadow: #ccc 1px 0 10px;
+  text-shadow: 1px 1px 20px black;
+
+}
+
+.si{
+  list-style: initial;
+}
+.tambien{
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-evenly;
+}
+
+.op-services{
+  height: 500px;
+  width: 100%;
 }
