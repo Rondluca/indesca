@@ -1,0 +1,7 @@
+$breakpoint-large: 992px;
+
+@mixin desktop {
+    @media screen and (min-width: $breakpoint-large) {
+      @content;
+    }
+  } 

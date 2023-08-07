@@ -1,5 +1,6 @@
 // Import all of Bootstrap's CSS
 @use "./variables.scss";
+@use "./tools.scss";
 @import "~bootstrap/scss/bootstrap";
 
 html {
@@ -134,53 +135,61 @@ ul {
 }
 
 .grow-shadow {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
 
-  &:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    box-shadow: 10px -15px 7px #c7c7c7;
-    //box-shadow: 0 0 5px 5px  #c7c7c7;
+  @include tools.desktop {
+    &:hover {
+      -webkit-transform: scale(1.05) !important;
+      -ms-transform: scale(1.05) !important;
+      transform: scale(1.05) !important;
+      box-shadow: 10px -15px 7px #c7c7c7 !important;
+      //box-shadow: 0 0 5px 5px  #c7c7c7;
+    }
   }
 }
 
 .grow-shadow-2 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
 
-  &:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    box-shadow: 10px 15px 7px #c7c7c7;
-    //box-shadow: 0 0 5px 5px  #c7c7c7;
+  @include tools.desktop {
+    &:hover {
+      -webkit-transform: scale(1.05) !important;
+      -ms-transform: scale(1.05) !important;
+      transform: scale(1.05) !important;
+      box-shadow: 10px 15px 7px #c7c7c7 !important;
+      //box-shadow: 0 0 5px 5px  #c7c7c7;
+    }
   }
 }
 
 .grow-shadow-inverse {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
 
-  &:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    box-shadow: -10px -15px 7px #c7c7c7;
-    //box-shadow: 0 0 5px 5px  #c7c7c7;
+  @include tools.desktop {
+    &:hover {
+      -webkit-transform: scale(1.05) !important;
+      -ms-transform: scale(1.05) !important;
+      transform: scale(1.05) !important;
+      box-shadow: -10px -15px 7px #c7c7c7 !important;
+      //box-shadow: 0 0 5px 5px  #c7c7c7;
+    }
   }
 }
 .grow-shadow-inverse-2 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
 
-  &:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    box-shadow: -10px 15px 7px #c7c7c7;
-    //box-shadow: 0 0 5px 5px  #c7c7c7;
+  @include tools.desktop {
+    &:hover {
+      -webkit-transform: scale(1.05) !important;
+      -ms-transform: scale(1.05) !important;
+      transform: scale(1.05) !important;
+      box-shadow: -10px 15px 7px #c7c7c7 !important;
+      //box-shadow: 0 0 5px 5px  #c7c7c7;
+    }
   }
 }
 
@@ -243,10 +252,10 @@ body {
   text-shadow: 1px 1px 20px black;
 }
 
-.si {
+.item-lista {
   list-style: initial;
 }
-.tambien {
+.lista {
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -256,4 +265,20 @@ body {
 .op-services {
   height: 500px;
   width: 100%;
+}
+
+.divcito{
+  background-image: url(../images/imagenes/fondo-div.png);
+  background-size:67% 100%;
+  background-repeat: no-repeat;
+  padding: 50px;
+  left: 40px;
+}
+
+.carousel{
+  display: none;
+  
+  @include tools.desktop{
+    display: block;
+  }
 }
