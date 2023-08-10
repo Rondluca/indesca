@@ -1,5 +1,4 @@
 // Import all of Bootstrap's CSS
-@use "./variables.scss";
 @use "./tools.scss";
 @import "~bootstrap/scss/bootstrap";
 
@@ -267,18 +266,38 @@ body {
   width: 100%;
 }
 
-.divcito{
+.divcito {
+  width: fit-content;
   background-image: url(../images/imagenes/fondo-div.png);
-  background-size:67% 100%;
+  background-size: 100% 200px;
   background-repeat: no-repeat;
   padding: 50px;
   left: 40px;
 }
 
-.carousel{
+.carousel {
   display: none;
-  
-  @include tools.desktop{
+
+  @include tools.desktop {
     display: block;
   }
+}
+
+.input-number {
+  -moz-appearance: textfield;
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus-visible, textarea:focus-visible{
+  border: solid 1px var(--color-crimson) !important;
+  outline: 3px solid var(--color-old-brick) !important;
+}
+
+form{
+  accent-color: var(--color-crimson);
 }
