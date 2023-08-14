@@ -245,16 +245,18 @@ body {
 .OP {
   height: 300px;
   width: 100%;
-  background-image: url(../images/imagenes/fachada-01.png);
+  background-image: url(../images/imagenes/fachada-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: black;
+  background-attachment: fixed;
+  color: #fff;
   text-shadow: 1px 1px 20px black;
 }
 
 .item-lista {
   list-style: initial;
 }
+
 .lista {
   display: flex;
   flex-direction: column;
