@@ -279,6 +279,28 @@ body {
   left: 40px;
 }
 
+.header-modal {
+  width: 100%;
+  background-image: url(../images/imagenes/fachada-01.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 200px;
+}
+
+.title-modal {
+  position: relative;
+  margin: 0 auto;
+  top: 60px;
+  color: #fff;
+}
+
+.btn-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .carousel {
   display: none;
 
@@ -297,11 +319,12 @@ body {
   margin: 0;
 }
 
-input:focus-visible, textarea:focus-visible{
+input:focus-visible,
+textarea:focus-visible {
   border: solid 1px var(--color-crimson) !important;
   outline: 3px solid var(--color-old-brick) !important;
 }
 
-form{
+form {
   accent-color: var(--color-crimson);
 }
