@@ -12,9 +12,18 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-body::-webkit-scrollbar{
+display: none;
+}
+
 body {
   scrollbar-width: none;
   position: relative;
+  -ms-overflow-style: none;
 }
 
 a {
@@ -261,7 +270,7 @@ body {
 .lista {
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 500px;
   justify-content: space-evenly;
 }
 
