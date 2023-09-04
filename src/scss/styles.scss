@@ -52,7 +52,7 @@ a {
   padding: 0;
 }
 
-ul {
+nav div ul {
   display: flex;
   li {
     list-style: none;
@@ -252,7 +252,7 @@ body {
   }
 }
 
-.OP {
+.div-wBackground {
   height: 300px;
   width: 100%;
   background-image: url(../images/imagenes/fachada-01.jpg);
@@ -263,18 +263,7 @@ body {
   text-shadow: 1px 1px 20px black;
 }
 
-.item-lista {
-  list-style: initial;
-}
-
-.lista {
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  justify-content: space-evenly;
-}
-
-.op-services {
+.services {
   height: 500px;
   width: 100%;
 }
@@ -309,14 +298,7 @@ body {
   top: 10px;
   right: 10px;
 }
-
-.carousel {
-  display: none;
-
-  @include tools.desktop {
-    display: block;
-  }
-}
+  
 
 .input-number {
   -moz-appearance: textfield;
@@ -336,4 +318,12 @@ textarea:focus-visible {
 
 form {
   accent-color: var(--color-crimson);
+}
+
+.lista-lecho-fijo{
+  height: 800px;
+
+  @include tools.desktop{
+    height: 300px;
+  }
 }
