@@ -1,7 +1,7 @@
-$breakpoint-large: 992px;
+@use 'variables';
 
 @mixin desktop {
-    @media screen and (min-width: $breakpoint-large) {
+    @media screen and (min-width: variables.$breakpoint-large) {
       @content;
     }
   } 
