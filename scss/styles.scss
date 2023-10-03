@@ -1,7 +1,5 @@
 @use "variables";
 @use "tools";
-// Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
 
 .carousel-img {
   object-fit: cover;
@@ -183,6 +181,7 @@
 
 .input-number {
   -moz-appearance: textfield;
+  appearance: text-field;
 }
 
 .input-number::-webkit-inner-spin-button,
