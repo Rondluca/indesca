@@ -1,5 +1,7 @@
 @use "variables";
 @use "tools";
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
 
 .carousel-img {
   object-fit: cover;
@@ -108,7 +110,6 @@
   }
 }
 
-
 .marquee-content {
   display: flex;
   animation: scrolling 20s linear infinite;
@@ -179,7 +180,6 @@
   top: 10px;
   right: 10px;
 }
-  
 
 .input-number {
   -moz-appearance: textfield;
@@ -191,6 +191,6 @@
   margin: 0;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }

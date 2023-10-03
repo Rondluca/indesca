@@ -1,6 +1,8 @@
 // Import our custom CSS
-import "../scss/main.scss";
+import "../scss/styles.scss";
 
+// Import all of Bootstrap's JS
+import * as bootstrap from "bootstrap";
 // Import all of Bootstrap's JS
 import AOS from "aos";
 import "aos/dist/aos.css";
