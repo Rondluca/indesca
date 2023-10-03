@@ -1,11 +1,17 @@
-const path = require("path");
+// vite.config.js
+import { resolve } from "path";
+import { defineConfig } from "vite";
 
-export default {
-  root: path.resolve(__dirname, "src"),
+export default defineConfig({
   build: {
-    outDir: "../dist",
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        organization: resolve(__dirname, "organization/index.html"),
+      },
+    },
   },
   server: {
     port: 8080,
   },
-};
+});
