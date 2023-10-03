@@ -8,6 +8,12 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         organization: resolve(__dirname, "organization/index.html"),
+        investigacion: resolve(
+          __dirname,
+          "investigacionDeAplicaciones/index.html"
+        ),
+        operaciones: resolve(__dirname, "operacionesPiloto/index.html"),
+        procesos: resolve(__dirname, "procesos/index.html"),
       },
     },
   },
