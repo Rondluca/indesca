@@ -1,7 +1,12 @@
-@use 'variables';
+@use "variables";
 
 @mixin desktop {
-    @media screen and (min-width: variables.$breakpoint-large) {
-      @content;
-    }
-  } 
+  @media screen and (min-width: variables.$breakpoint-large) {
+    @content;
+  }
+}
+@mixin desktopDiv {
+  @media screen and (min-width: variables.$breakpoint-div) {
+    @content;
+  }
+}
