@@ -14,6 +14,7 @@ export default defineConfig({
         ),
         operaciones: resolve(__dirname, "operacionesPiloto/index.html"),
         procesos: resolve(__dirname, "procesos/index.html"),
+        mantenimiento: resolve(__dirname, "mantenimiento/index.html"),
       },
     },
   },

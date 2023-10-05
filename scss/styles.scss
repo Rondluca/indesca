@@ -11,6 +11,10 @@
   height: 350px;
 }
 
+.img-mantenimiento {
+  object-fit: cover;
+}
+
 .justify-text {
   text-align: justify;
 }
@@ -135,7 +139,7 @@
 .div-wBackground {
   height: 300px;
   width: 100%;
-  background-image: url(../images/imagenes/fachada-01.jpg);
+  background-image: url("/images/imagenes/fachada-01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -143,14 +147,27 @@
   text-shadow: 1px 1px 20px black;
 }
 
-.services {
+.procesos {
+  background-image: url("/images/imagenes/gerenciaProcesos/procesosPortada.jpg");
   height: 500px;
-  width: 100%;
+  background-attachment: fixed;
+}
+
+.aplicaciones {
+  background-image: url("/images/imagenes/gerenciaAplicaciones/aplicacionesPortada.jpg");
+  height: 500px;
+  background-attachment: fixed;
+}
+
+.mantenimiento {
+  background-image: url("/images/imagenes/gerenciaMantenimiento/portadaMantenimiento.jpg");
+  height: 500px;
+  background-attachment: fixed;
 }
 
 .carousel-div {
   width: fit-content;
-  background-image: url(../images/imagenes/fondo-div.png);
+  background-image: url("/images/imagenes/fondo-div.png");
   background-size: 100% 200px;
   background-repeat: no-repeat;
   padding: 50px;
@@ -158,11 +175,12 @@
 
 .header-modal {
   width: 100%;
-  background-image: url(../images/imagenes/fachada-01.jpg);
+  background-image: url("/images/imagenes/fachada-01.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   height: 200px;
+  opacity: 0.7;
 }
 
 .title-modal {
@@ -200,4 +218,34 @@
   @include tools.desktopDiv {
     padding-top: 4.125rem !important;
   }
+}
+
+.heading-div {
+  width: 50%;
+  background-image: url("/images/imagenes/fondo-div.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 50px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+
+.heading-div-procesos {
+  width: fit-content;
+  background-image: url("/images/imagenes/fondo-div.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px;
+  top: 10px;
+  left: 15px;
+}
+
+.img-section {
+  object-fit: cover;
+}
+
+.card {
+  border: none;
 }
