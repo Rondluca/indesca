@@ -1,9 +1,6 @@
 # Proyecto para la empresa Investigación y Desarrollo C.A. (Indesca)
 
-[![Estado del Proyecto](https://img.shields.io/badge/estado-del%20proyecto-brightgreen)](https://github.com/Rondluca/indesca)
-[![Versión de Vite](https://img.shields.io/badge/vite-v2.5.10-blue)](https://vitejs.dev/)
-
-El proyecto se trata acerca una pagina web informativa sobre la imagen de la empresa Investigación y Desarrollo C.A. (Indesca)
+El proyecto en desarrollo se trata acerca una pagina web informativa sobre la imagen de la empresa Investigación y Desarrollo C.A. (Indesca)
 
 ## Demo
 
