@@ -7,14 +7,19 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        organization: resolve(__dirname, "organization/index.html"),
+        organization: resolve(__dirname, "pages", "organization/index.html"),
         investigacion: resolve(
           __dirname,
+          "pages",
           "investigacionDeAplicaciones/index.html"
         ),
-        operaciones: resolve(__dirname, "operacionesPiloto/index.html"),
-        procesos: resolve(__dirname, "procesos/index.html"),
-        mantenimiento: resolve(__dirname, "mantenimiento/index.html"),
+        operaciones: resolve(
+          __dirname,
+          "pages",
+          "operacionesPiloto/index.html"
+        ),
+        procesos: resolve(__dirname, "pages", "procesos/index.html"),
+        mantenimiento: resolve(__dirname, "pages", "mantenimiento/index.html"),
       },
     },
   },
